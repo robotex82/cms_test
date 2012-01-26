@@ -1,0 +1,111 @@
+
+--- 
+admin_users: 
+  columns: 
+  - id
+  - email
+  - encrypted_password
+  - reset_password_token
+  - reset_password_sent_at
+  - remember_created_at
+  - sign_in_count
+  - current_sign_in_at
+  - last_sign_in_at
+  - current_sign_in_ip
+  - last_sign_in_ip
+  - created_at
+  - updated_at
+  records: 
+  - - 1
+    - admin@example.com
+    - $2a$10$KXzcALoNQhEyuo5YhhO.s.x7Ffh7tAgIKcQhz03nNfjjp.BnOFgPO
+    - 
+    - 
+    - 2012-01-24 17:42:19.119206
+    - 2
+    - 2012-01-25 16:11:40.753455
+    - 2012-01-24 17:42:19.169118
+    - 192.168.0.37
+    - 192.168.0.37
+    - 2012-01-24 17:40:11.228826
+    - 2012-01-25 16:11:40.753627
+
+--- 
+folders: 
+  columns: 
+  - id
+  - name
+  - path
+  - parent_id
+  - lft
+  - rgt
+  - created_at
+  - updated_at
+  records: 
+  - - 12
+    - /
+    - ""
+    - 
+    - 1
+    - 10
+    - 2012-01-25 13:11:38.329744
+    - 2012-01-25 18:32:06.139142
+  - - 13
+    - games
+    - /
+    - 12
+    - 2
+    - 9
+    - 2012-01-25 16:12:12.283613
+    - 2012-01-25 18:32:06.151955
+  - - 14
+    - borderlands
+    - /games/
+    - 13
+    - 3
+    - 8
+    - 2012-01-25 17:04:09.160869
+    - 2012-01-25 18:32:06.155784
+  - - 15
+    - one
+    - /games/borderlands/
+    - 14
+    - 4
+    - 5
+    - 2012-01-25 18:17:49.954527
+    - 2012-01-25 18:32:06.159609
+  - - 16
+    - two
+    - /games/borderlands/
+    - 14
+    - 6
+    - 7
+    - 2012-01-25 18:18:03.401298
+    - 2012-01-25 18:32:06.167371
+
+--- 
+templates: 
+  columns: 
+  - id
+  - body
+  - name
+  - path
+  - format
+  - locale
+  - handler
+  - partial
+  - folder_id
+  - created_at
+  - updated_at
+  records: 
+  - - 3
+    - preview
+    - preview
+    - /games/borderlands/two/preview
+    - html
+    - en
+    - erb
+    - false
+    - 16
+    - 2012-01-25 18:32:58.018382
+    - 2012-01-25 18:34:19.995839

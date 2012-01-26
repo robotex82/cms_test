@@ -1,0 +1,20 @@
+de:
+  activerecord:
+    attributes:
+      folder:
+        fullname: "Voller Name"
+        templates_count: "Templates"
+      template:
+        body: "Inhalt"
+        folder: "Ordner"
+        format: "Format"
+        handler: "Handler"
+        locale: "Sprache"
+        name: "Name"
+        path: "Pfad"
+    models:
+     folder: "Ordner"
+     template: "Vorlage"  
+  attributes:
+    created_at: "Erstellt"
+    updated_at: "Aktualisiert"
