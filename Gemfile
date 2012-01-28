@@ -33,4 +33,6 @@ gem 'sqlite3'
 gem 'activeadmin'
 gem 'awesome_nested_set'
 gem 'i18n_routing'
+gem 'simple-navigation'
+
 gem 'yaml_db'

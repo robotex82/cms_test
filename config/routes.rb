@@ -3,9 +3,9 @@ CmsTest::Application.routes.draw do
   devise_for :admin_users, ActiveAdmin::Devise.config
   
   localized(I18n.available_locales, :verbose => true) do
-    scope "/:i18n_locale", :i18n_locale => /#{I18n.available_locales.join('|')}/ do 
+    scope "/:i18n_locale", :constraints => {:i18n_locale => /#{I18n.available_locales.join('|')}/} do 
     
-      match '/' => "page#respond", :page => 'index', :as => :root
+      match '/' => "page#respond", :page => '/home/index', :as => :root
       match "/*page", :to => "page#respond", :as => :page
     end  
   end  

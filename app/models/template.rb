@@ -3,13 +3,13 @@ class Template < ActiveRecord::Base
   
   #validates :body, :path, :presence => true
   validates :path, :presence => true
-  validates :name, :presence => true, :uniqueness => { :scope => :folder_id }
+  validates :name, :presence => true, :uniqueness => { :scope => [:folder_id, :locale] }
   validates :folder_id, :presence => true
 
   # 1) Allow nil on format validation
   validates :format,  :inclusion => Mime::SET.symbols.map(&:to_s),
     :allow_nil => true, :allow_blank => true
-  validates :locale,  :inclusion => I18n.available_locales.map(&:to_s)
+  # validates :locale,  :inclusion => I18n.available_locales.map(&:to_s)
   validates :handler, :inclusion =>
     ActionView::Template::Handlers.extensions.map(&:to_s)
 

@@ -1,0 +1,23 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  key: MyString
+  name: MyString
+  url: MyString
+  options: MyString
+  navigation: 
+  parent_id: 1
+  lft: 1
+  rgt: 1
+  position: 1
+
+two:
+  key: MyString
+  name: MyString
+  url: MyString
+  options: MyString
+  navigation: 
+  parent_id: 1
+  lft: 1
+  rgt: 1
+  position: 1

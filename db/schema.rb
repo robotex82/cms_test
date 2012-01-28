@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120125130054) do
+ActiveRecord::Schema.define(:version => 20120128152205) do
 
   create_table "active_admin_comments", :force => true do |t|
     t.integer  "resource_id",   :null => false
@@ -53,6 +53,28 @@ ActiveRecord::Schema.define(:version => 20120125130054) do
     t.integer  "lft"
     t.integer  "rgt"
     t.integer  "templates_count", :default => 0
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "navigation_items", :force => true do |t|
+    t.string   "key"
+    t.string   "name"
+    t.string   "url"
+    t.string   "options"
+    t.integer  "navigation_id"
+    t.integer  "parent_id"
+    t.integer  "lft"
+    t.integer  "rgt"
+    t.integer  "position"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "navigations", :force => true do |t|
+    t.string   "name"
+    t.string   "level"
+    t.boolean  "expand"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
