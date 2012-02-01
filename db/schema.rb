@@ -57,6 +57,17 @@ ActiveRecord::Schema.define(:version => 20120128152205) do
     t.datetime "updated_at"
   end
 
+  create_table "navigation_item_translations", :force => true do |t|
+    t.integer  "navigation_item_id"
+    t.string   "locale"
+    t.string   "name"
+    t.string   "url"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "navigation_item_translations", ["navigation_item_id"], :name => "index_178615718ac16e28befa06db57f4bc63789e6375"
+
   create_table "navigation_items", :force => true do |t|
     t.string   "key"
     t.string   "name"

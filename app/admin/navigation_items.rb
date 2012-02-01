@@ -4,7 +4,7 @@ ActiveAdmin.register NavigationItem do
       f.input :navigation
       f.input :parent
       f.input :key
-      f.input :name
+      f.input :name,:as => :flexible_text
       f.input :url, :as => :string
       f.input :options
     end  

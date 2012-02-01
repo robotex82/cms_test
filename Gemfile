@@ -30,9 +30,10 @@ gem 'sqlite3'
 #   gem 'webrat'
 # end
 
-gem 'activeadmin'
+gem 'activeadmin', :git => 'git://github.com/gregbell/active_admin.git'
 gem 'awesome_nested_set'
 gem 'i18n_routing'
 gem 'simple-navigation'
+gem 'globalize3'
 
 gem 'yaml_db'

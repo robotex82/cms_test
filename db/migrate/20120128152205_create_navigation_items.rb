@@ -13,9 +13,11 @@ class CreateNavigationItems < ActiveRecord::Migration
 
       t.timestamps
     end
+    NavigationItem.create_translation_table! :name => :string, :url => :string
   end
 
   def self.down
+    NavigationItem.drop_translation_table!
     drop_table :navigation_items
   end
 end
